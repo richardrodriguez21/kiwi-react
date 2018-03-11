@@ -250,12 +250,12 @@ function FlightInfoBox(props){
                 </header>
                 <div className="airport-info">
                     <label htmlFor="">Airport:</label>
-                    <span className="airport-name">{flight.departure.airport.name}</span>
+                    <span className="airport-name">{flight.arrival.airport.name}</span>
                 </div>
 
                 <div className="city-info">
                     <label htmlFor="">City:</label>
-                    <span className="city-name">{flight.departure.airport.city.name}</span>
+                    <span className="city-name">{flight.arrival.airport.city.name}</span>
                 </div>
 
                 <div className="time">
