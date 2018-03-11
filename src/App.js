@@ -237,6 +237,11 @@ function FlightInfoBox(props){
                     <span className="city-name">{flight.departure.airport.city.name}</span>
                 </div>
 
+                <div className="time">
+                    <label htmlFor="">Departure at:</label>
+                    <div>{moment(flight.departure.localTime).format('YYYY-MM-DD HH:mm')}</div>
+                </div>
+
             </div>
 
             <div className="arrival">
@@ -252,6 +257,12 @@ function FlightInfoBox(props){
                     <label htmlFor="">City:</label>
                     <span className="city-name">{flight.departure.airport.city.name}</span>
                 </div>
+
+                <div className="time">
+                    <label htmlFor="">Arrival at:</label>
+                    <div>{moment(flight.arrival.localTime).format('YYYY-MM-DD HH:mm')}</div>
+                </div>
+
             </div>
 
             <div className="price-info">
